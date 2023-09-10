@@ -20,5 +20,6 @@ from app.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('jinja_forms/',jinja_forms,name='jinja_forms')
+    path('jinja_forms/',jinja_forms,name='jinja_forms'),
+    path('update_delete/',update_delete,name='update_delete'),
 ]

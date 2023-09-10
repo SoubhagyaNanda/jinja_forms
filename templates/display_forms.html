@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Data</title>
+    <style>
+        table
+        {
+            border-color: black;
+            background-color:whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <table border="3px", border-color: black;>
+
+            <tr>
+                <th>Sname</th>
+                <th>Sid</th>
+                <th>Semail</th>
+            </tr>
+
+            {% for so in STDO %}
+                <tr>
+                    <td>{{so.Sname}}</td>
+                    <td>{{so.Sid}}</td>
+                    <td>{{so.Semail}}</td>
+                </tr>
+            {% endfor %}
+
+        </table>
+    </center>
+</body>
+</html>

@@ -1,5 +1,6 @@
-from django.forms import *
+from django import forms
 
 class StudentForm(forms.Form):
-    Name = CharField(max_length=100)
-    ID = IntegerField()
+    Sname = forms.CharField(max_length=100)
+    Sid = forms.IntegerField()
+    Semail= forms.EmailField()
